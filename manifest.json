@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "files": 7,
-  "digits": 665000000,
+  "files": 8,
+  "digits": 760000000,
   "fileBytes": 40000000,
   "digitsPerFile": 95000000,
   "name": "pi_%04d.bin",
   "base": "https://github.com/andyvr0o-ui/pi-digits/releases/download/digits-v1/",
   "source": "https://storage.googleapis.com/pi100t/Pi%20-%20Dec%20-%20Chudnovsky/Pi%20-%20Dec%20-%20Chudnovsky%20-%200.ycd",
   "sourceOffset": 200,
-  "updated": "2026-10-21T22:51:08.981Z"
+  "updated": "2026-10-21T22:55:54.599Z"
 }
