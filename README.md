@@ -4,13 +4,14 @@ Decimal digits of pi for [Pi Explorer](https://github.com/andyvr0o-ui/piexplorer
 files in the release [`digits-v1`](https://github.com/andyvr0o-ui/pi-digits/releases/tag/digits-v1).
 
 A Cloudflare Worker (code in [`piexplorer/worker/`](https://github.com/andyvr0o-ui/piexplorer/tree/main/worker))
-copies them every 5 minutes from Google's public y-cruncher file (`source` in `manifest.json`).
+copies them from Google's public y-cruncher file (`source` in `manifest.json`) when Pi Explorer
+searches past the end: the app asks for more (`wanted` in `manifest.json`) and the Worker
+adds a file every 5 minutes until it gets there. The app never uploads digits itself.
 
-## Change how many digits are kept
+## Change how many digits may be kept
 
-Edit `config.json` on github.com and change `targetDigits`. The Worker adds files until
-`manifest.json` → `digits` reaches it (at most 1000 files = 95 billion digits). Lowering it
-does not delete files.
+Edit `config.json` on github.com and change `targetDigits`: the store never grows past it
+(at most 1000 files = 95 billion digits). Lowering it does not delete files.
 
 ## File format
 
