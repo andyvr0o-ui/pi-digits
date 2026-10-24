@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "files": 66,
-  "digits": 6270000000,
+  "files": 67,
+  "digits": 6365000000,
   "fileBytes": 40000000,
   "digitsPerFile": 95000000,
   "name": "pi_%04d.bin",
@@ -9,5 +9,5 @@
   "source": "https://storage.googleapis.com/pi100t/Pi%20-%20Dec%20-%20Chudnovsky/Pi%20-%20Dec%20-%20Chudnovsky%20-%200.ycd",
   "sourceOffset": 200,
   "wanted": 6555000000,
-  "updated": "2026-10-24T01:00:43.234Z"
+  "updated": "2026-10-24T01:05:45.615Z"
 }
