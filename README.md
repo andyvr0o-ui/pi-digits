@@ -31,6 +31,6 @@ Decimal place `p` (1-based, after the "3.") is in word `w = (p − 1) div 19`, f
 `found.json` lists numbers Pi Explorer users found: `{"version":1,"finds":[{"d":"140392","p":1233,"n":3,"t":"2026-10-23","f":"9c1e04b2a7d35f60"}]}`
 (`d` digits, `p` 0-based index so the number starts at decimal place `p + 1`, `n` times found,
 `t` first found, `f` (on the first find of those digits only) a one-way mark of the first finder's random app id, different for every
-find, so only that phone can recognise it). The app sends `POST /found?digits=D&place=P` to the Worker, which reads those
+find, so only that phone can recognise it). The app sends `POST /found` with `{"finds":[{"d":"140392","p":1233}]}` (up to 25 at once) to the Worker, which reads those
 places from Google's file itself and adds them only when they match. Only digits and places
 are kept, nothing that says who found them.
